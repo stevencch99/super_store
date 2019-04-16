@@ -1,24 +1,8 @@
-# README
+# A test homework
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is a test homework that I practice with model association and how to prevent "n + 1 query".
 
-Things you may want to cover:
+- This project has 3 models: **Store, Author and Book**.
+  - Every store and author has many books, each book has it's author and belongs to store(for sale).
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+- Each index has been beautified by Bootstrap
