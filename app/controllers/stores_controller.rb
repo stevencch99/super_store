@@ -5,7 +5,7 @@ class StoresController < ApplicationController
   # GET /stores.json
   # 避免 Ｎ＋１問題
   def index
-    @stores = Store.all.includes(:books)
+    @stores = Store.includes(:books).all
   end
 
   # GET /stores/1

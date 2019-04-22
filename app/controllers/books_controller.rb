@@ -1,10 +1,10 @@
 class BooksController < ApplicationController
   before_action :set_book, only: [:show, :edit, :update, :destroy]
-
   # GET /books
   # GET /books.json
   def index
-    @books = Book.all.includes(:store, :author)
+    # includes 和 .all 有先後順序問題！
+    @books = Book.includes(:store, :authors).all
   end
 
   # GET /books/1
